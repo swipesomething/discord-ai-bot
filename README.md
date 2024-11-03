@@ -34,11 +34,13 @@ cd discord-ai-bot
 
    Example `config.ini`:
    ```ini
-   [settings]
-   discord_token = your_discord_bot_token
-   owner_id = your_discord_id
-   huggingface_token = your_hugging_face_token
-   system_prompt = "Provide helpful responses to all user inquiries."
+   [DISCORD]
+   token=your_discord_bot_token
+   owner=your_discord_user_id
+   
+   [AI]
+   hftoken=your_huggingface_token
+   system=System Prompt for the chat bot
    ```
 
 ### Start the container
