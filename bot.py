@@ -22,7 +22,7 @@ intents = discord.Intents.all()
 class DiscordBot(commands.Bot):
     def __init__(self) -> None:
         super().__init__(
-            command_prefix=commands.when_mentioned,
+            command_prefix="/",
             intents=intents,
             help_command=None,
         )
@@ -44,7 +44,7 @@ class DiscordBot(commands.Bot):
 
     @tasks.loop(minutes=1.0)
     async def status_task(self) -> None:
-        statuses = ["with you!", "with Krypton!", "with humans!"]
+        statuses = ["with you!", "with myself!", "with humans!"]
         await self.change_presence(activity=discord.Game(random.choice(statuses)))
 
     @status_task.before_loop
@@ -58,12 +58,10 @@ class DiscordBot(commands.Bot):
         self.logger.info(f"Running on: {platform.system()} {platform.release()} ({os.name})")
         self.logger.info("-------------------")
         await self.load_cogs()
+        await self.tree.sync()
+        print("Slash commands synced globally.")
         self.status_task.start()
 
-    async def on_message(self, message: discord.Message) -> None:
-        if message.author == self.user or message.author.bot:
-            return
-        await self.process_commands(message)
 
     async def on_command_completion(self, context: Context) -> None:
         full_command_name = context.command.qualified_name
