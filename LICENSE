@@ -19,3 +19,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+---
+
+### Additional License Notices
+
+Parts of this project incorporate code or snippets from external sources and are therefore subject to different licensing terms as follows:
+
+- **Files:** `bot.py, customlogger.py`
+- **Source:** [kkrypt0nn’s Python Discord Bot Template](https://github.com/kkrypt0nn/Python-Discord-Bot-Template)
+- **License:** Apache License 2.0
+- **License Terms:** This file is licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at [Apache License 2.0](https://github.com/kkrypt0nn/Python-Discord-Bot-Template/blob/main/LICENSE.md).

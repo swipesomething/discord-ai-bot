@@ -10,6 +10,5 @@ bot = DiscordBot()
 bot.config = config
 
 if __name__ == "__main__":
-    bot.run(config['CONFIG']['token'])
+    bot.run(config['DISCORD']['token'])
     print("Slash commands synced globally.")
-
