@@ -11,3 +11,5 @@ bot.config = config
 
 if __name__ == "__main__":
     bot.run(config['CONFIG']['token'])
+    print("Slash commands synced globally.")
+
