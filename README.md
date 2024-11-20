@@ -1,6 +1,6 @@
 # Discord AI Bot
 
-This project aims to provide the means to quickly whip out a free Discord chatbot with AI capabilities. Users can ask questions and the bot will use a large language model to reply.
+This project aims to provide the means to quickly whip out a free Discord chatbot with AI capabilities. Users can ask questions and the bot will use a large language model to reply. I'm using this to learn how to use github, so if it's not that good, well, sorry about that, I'm an amateur and this whole setup could probably be coded better :P
 
 The bot uses Qwen2.5-72B-Instruct via the HuggingFace API.
 
